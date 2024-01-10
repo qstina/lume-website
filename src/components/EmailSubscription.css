@@ -1,0 +1,106 @@
+.email-subscription {
+    background-color: #f9f9f9;
+    padding: 50px;
+    margin-top: 20px; /* Adjust the margin as needed */
+    text-align: center;
+}
+  
+  .email-subscription h2 {
+    font-family: "poppins-bold";
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .email-subscription p {
+    font-family: "poppins";
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  
+  .email-subscription form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .email-subscription input[type="email"] {
+    font-family: "poppins";
+    width: 250px;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .email-subscription button {
+    font-family: "poppins";
+    padding: 10px 20px;
+    border: none;
+    background-color: #ffa07a;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 3px;
+    font-size: 14px;
+  }
+  
+  .email-subscription button:hover {
+    background-color: #e082a3;
+  }
+
+  @media screen and (max-width: 764px) {
+    .email-subscription {
+      background-color: #f9f9f9;
+      padding: 50px;
+      margin-top: 20px; /* Adjust the margin as needed */
+      text-align: center;
+  }
+    
+    .email-subscription h2 {
+      font-family: "poppins-bold";
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+    
+    .email-subscription p {
+      font-family: "poppins";
+      font-size: 15px;
+      padding-left: 15px;
+      padding-right: 15px;
+      margin-bottom: 20px;
+    }
+    
+    .email-subscription form {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    
+    .email-subscription input[type="email"] {
+      font-family: "poppins";
+      font-size: 12px;
+      width: 250px;
+      padding: 10px;
+      margin-right: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    
+    .email-subscription button {
+      font-family: "poppins";
+      padding: 10px 20px;
+      border: none;
+      background-color: #ffa07a;
+      color: white;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-top: 15px;
+      font-size: 12px;
+    }
+    
+    .email-subscription button:hover {
+      background-color: #e082a3;
+    }
+  }

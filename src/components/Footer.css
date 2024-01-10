@@ -1,0 +1,23 @@
+
+.icon {
+    font-size: 24px;
+    margin: 0 10px;
+    cursor: pointer;
+    color: #f4eef1; 
+  }
+  
+  .icon:hover {
+    color: #171716; 
+  
+  }
+  
+  .copyright {
+    color: #fff;
+    text-align: left; /* Adjust alignment as needed */
+    margin-top: 20px; /* Adjust margin as needed */
+    display: inline;
+    white-space: nowrap;
+    margin-left: 80px;
+    font-size: 12px;
+  }
+  

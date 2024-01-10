@@ -1,0 +1,191 @@
+@font-face {
+  font-family: 'poppins-bold';
+  src: url('./fonts/poppins-bold-webfont.woff2') format('woff2'),
+      url('./fonts/poppins-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'poppins';
+  src: url('./fonts/poppins-regular-webfont.woff2') format('woff2'),
+      url('./fonts/poppins-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+body {
+  font-family: 'poppins';
+  font-weight: normal;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 140px;
+}
+
+.navbar {
+  padding: 20px 40px;
+  box-sizing: border-box;
+  height: 10vh;
+  width: 60%;
+  line-height: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 50px;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1), /* Adjust shadow size and color */
+              0 0 40px rgba(0, 0, 0, 0.1), /* Add more layers if needed */
+              0 0 60px rgba(0, 0, 0, 0.1);
+  transition: all 0.5s ease-in-out;
+  margin-top: 20px;
+  position: relative;
+  overflow: hidden;
+  z-index: 5;
+}
+
+.nav-links li:hover {
+  color: #ff5733; /* Change to your desired hover color */
+}
+
+.nav-icon:hover {
+  color: #ff5733; /* Change to your desired hover color */
+}
+
+.logo-size {
+  width: 120px;
+  height: auto;
+}
+
+.logo-container {
+  margin-top: 2%;
+  justify-content: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-links li {
+  display: flex;
+  color: black;
+  font-size: 16px;
+  padding: 1px 10px;
+  margin: 0px 10px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.nav-icons {
+  display: flex;
+  align-items: center;
+}
+
+.nav-icon {
+  font-size: 20px;
+  margin-left: 15px;
+  cursor: pointer;
+  color: black;
+}
+
+button {
+  margin-top: 6vh;
+  border: none;
+  background: none;
+  font-size: 20px;
+}
+
+.mobile-menu-icon {
+  display: none;
+}
+
+@media (max-width:1254px) {
+  
+  .navbar {
+    height: 7vh;
+    width: 80%;
+    margin-top: -6%;
+    margin-left: -3%;
+    overflow: visible;
+  }
+  
+  .nav-icon {
+    display: none;
+  }
+
+  .nav-links {
+      display: none;
+      color: black;
+  }
+
+  .nav-links-mobile {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(50, 50, 93, 0.23) 0 30px 30px -20px;
+    margin-top: 70%;
+    margin-left: 32%;
+    transition: all 0.5s ease-in-out;
+    border-radius: 25px;
+    width: 50%;
+    background-color: white;
+}
+
+
+  ul li {
+    color: black;
+      margin-right: 15%;
+      padding: 10px;
+      transition: all 0.5s ease-in-out;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+  }
+
+  .mobile-menu-icon {
+      margin-top: 1.5%;
+      position: absolute;
+      display: block;
+      right: 25px;
+  }
+
+  .logo-container {
+    margin-top: 6%;
+    margin-left: -50%;
+    position: absolute;
+  }
+
+  .logo-size {
+      width: 90px;
+      height: auto;
+      transition: all 0.5s ease-in-out;
+  }
+}

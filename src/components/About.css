@@ -1,0 +1,167 @@
+/* About.css */
+
+/* Navigation styles */
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  padding: 0px;
+  margin: 0; /* Set margin to zero */
+}
+
+.navbar a {
+  color: black; /* Set font color to black */
+  text-decoration: none;
+  transition: color 0.3s; /* Add transition effect for color changes */
+}
+
+/* Change color to white on hover */
+.navbar a:hover {
+  color: white;
+}
+
+/* Adjust the style for the top banner to cover the whole screen */
+.top-banner {
+  background-color: rgb(218, 193, 126);
+  color: rgb(250, 249, 249); /* Set font color to black */
+  text-align: center;
+  padding: 0px;
+  width: 100vw; /* Set width to 100% of the viewport width */
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  margin: 0; /* Remove margin */
+}
+
+/* Photo lume section styles */
+.photo-section {
+  width: 100vw;  /*80vw*/
+}
+
+.photo-section img {
+  width: 100%;
+  max-width: 80;
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Remove extra space below image */
+  padding: 0px;
+}
+
+
+/* Common styles for all screen sizes */
+.about-container {
+  max-width: 800px; /* Adjusted to 100% */
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center-align content horizontally */
+  padding: 0 30px; /* Add left and right padding */
+}
+
+/* Container styles */
+.company-background,
+.mission-vision,
+.team-section {
+  margin-bottom: 20px;
+  width: 100%; /* Adjusted to 100% */
+  text-align: left; /* Left-align text within the containers */
+  padding: 0 30px; /* Add left and right padding */
+}
+
+/* Heading styles */
+.mission h3,
+.vision h3,
+.about-title { /* New style for the "About Us" title */
+  text-align: center; /* Center-align the heading */
+  display: inline-block; /* Center-align the heading */
+  background-color: #c3c3c5; /* Add a background color for better visibility */
+  padding: 5px; /* Add some padding for styling */
+  margin: 0; /* Reset margin to ensure consistent spacing */
+  color: black; /* Set font color to black */
+}
+
+
+/* Organization chart styles */
+.organization-chart {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0px;
+}
+
+/* Team member styles */
+.team-section h3 {
+  text-align: center; /* Center-align the heading */
+  font-size: 27px;
+  color: black; /* Set font color to black */
+  padding: 0px;
+}
+
+.team-members {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0px;
+}
+
+.team-member {
+  margin: 10px;
+  text-align: center;
+  width: calc(33.33% - 20px); /* Adjust width for three members with margin */
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s; /* Add transition effect */
+  display: flex; /* Make the team member a flex container */
+  flex-direction: column; /* Stack children vertically */
+  align-items: left; /* Center children horizontally */
+  padding: 0px;
+}
+
+.team-member img {
+  width: 100%; /* Make the image larger */
+  max-width: none; /* Allow the image to exceed its original size */
+  height: auto;
+  border-radius: 15px; /* Add border-radius for rectangle shape */
+  transition: transform 0.3s; /* Add transition effect for image */
+  padding: 0px;
+}
+
+.team-member .description-box {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+  margin: 0;
+  padding: 0px;
+  transform: translateY(100%); /* Move description below initially */
+  transition: transform 0.3s; /* Add transition effect */
+  display: flex;
+  flex-direction: column;
+  align-items: flex; /* Align description to the left */
+  color: black; /* Set font color to black */
+}
+
+.team-member .description-box {
+  font-size: 14px; /* Set font size for description */
+  margin: 0;
+  color: black; /* Set font color to black */
+}
+
+.team-member:hover {
+  transform: scale(1.1); /* Scale up on hover */
+}
+
+.team-member:hover img {
+  transform: translateY(-10px); /* Move image up on hover */
+}
+
+.team-member:hover .description-box {
+  transform: translateY(0); /* Move description up on hover */
+}
+
+/* Media query for screens smaller than 768px (typical mobile devices) */
+@media (max-width: 768px) {
+  .team-member {
+    width: calc(50% - 20px); /* Adjust width for two members with margin */
+  }
+}
